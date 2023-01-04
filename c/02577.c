@@ -1,6 +1,6 @@
 #pragma warning(disable:4996)
 #include <stdio.h>
-// [baekjoon] 2577¹ø - ¼ıÀÚÀÇ °³¼ö
+// [baekjoon] 2577ë²ˆ - ìˆ«ìì˜ ê°œìˆ˜
 
 int main() {	
 

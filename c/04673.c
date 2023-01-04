@@ -1,5 +1,5 @@
 #include <stdio.h>
-// [baekjoon] 4673¹ø - ¼¿ÇÁ ³Ñ¹ö
+// [baekjoon] 4673ë²ˆ - ì…€í”„ ë„˜ë²„
 
 int d(int n) {
 	int sum = n;

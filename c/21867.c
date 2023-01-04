@@ -1,7 +1,7 @@
 #pragma warning(disable:4996)
 #include <stdio.h>
 #include <string.h>
-// [baekjoon] 21867¹ø - Java Bitecode
+// [baekjoon] 21867ë²ˆ - Java Bitecode
 
 int main() {
 

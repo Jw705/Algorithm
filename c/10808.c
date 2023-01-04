@@ -1,7 +1,7 @@
 ﻿#pragma warning(disable:4996)
 #include <stdio.h>
 #include <string.h>
-// [baekjoon] 10808번 - 알바벳 개수
+// [baekjoon] 10808번 - 알파벳 개수
 
 int main() {
 

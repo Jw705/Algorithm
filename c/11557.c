@@ -1,22 +1,22 @@
 #pragma warning(disable:4996)
 #include <stdio.h>
 #include <string.h>
-// [baekjoon] 11557¹ø - Yangjojang of The Year
+// [baekjoon] 11557ë²ˆ - Yangjojang of The Year
 
 int main() {
 
 	int T, N, L[100];
-	char S[100][21];					// ÇĞ±³ ÀÌ¸§À» ÀúÀåÇÒ 2Â÷¿ø ¹è¿­!
+	char S[100][21];					// í•™êµ ì´ë¦„ì„ ì €ì¥í•  2ì°¨ì› ë°°ì—´!
 	scanf("%d", &T);			
 
 	for (int i = 0; i < T; i++) {
 		scanf("%d", &N);
-		int max_num = 0;				// ¼ú ¼Òºñ°¡ °¡Àå ¸¹Àº ÇĞ±³ÀÇ ¼ø¼­
-		int max_sul = 0;				// ¼ú ¼Òºñ°¡ °¡Àå ¸¹Àº ÇĞ±³ÀÇ ¼ú ¼Òºñ·®
+		int max_num = 0;				// ìˆ  ì†Œë¹„ê°€ ê°€ì¥ ë§ì€ í•™êµì˜ ìˆœì„œ
+		int max_sul = 0;				// ìˆ  ì†Œë¹„ê°€ ê°€ì¥ ë§ì€ í•™êµì˜ ìˆ  ì†Œë¹„ëŸ‰
 		
 		for (int j = 0; j < N; j++) {
 			scanf("%s%d", &S[j], &L[j]);
-			if (L[j] > max_sul) {		// ¼ú ¼Òºñ·® ºñ±³
+			if (L[j] > max_sul) {		// ìˆ  ì†Œë¹„ëŸ‰ ë¹„êµ
 				max_sul = L[j];
 				max_num = j;
 			}

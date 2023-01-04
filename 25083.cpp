@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-// [baekjoon] 25083¹ø - »õ½Ï
+// [baekjoon] 25083ë²ˆ - ìƒˆì‹¹
+// 2023.01.03
 
 int main(void) {
 	cout << "         ,r'\"7\n";

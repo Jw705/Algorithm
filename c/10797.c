@@ -1,20 +1,24 @@
 #pragma warning(disable:4996)
 #include <stdio.h>
-// [baekjoon] 10991¹ø - º° Âï±â-16
+// [baekjoon] 10991ë²ˆ - ë³„ ì°ê¸°-16
 
 int main() {
 
-	int n;
+	int n,i,j;
 	scanf("%d", &n);
 
-	for (i = 0; i <= n; i++) {
+	for (i = 1; i <= n; i++) {
 
-		for (j = 0; j < n-i; j++) {
+		for (j = 0; j < n - i; j++) {
 			printf(" ");
 		}
+		
+		for (j = 0; j < i; j++) {
+			printf("*");
+			if (j == i);
+			else printf(" ");
+		}
 		printf("\n");
-
-		printf("*");
 	}
 
 

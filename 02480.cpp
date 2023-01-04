@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-// [baekjoon] 2480¹ø - ÁÖ»çÀ§ ¼¼°³
+// [baekjoon] 2480ë²ˆ - ì£¼ì‚¬ìœ„ ì„¸ê°œ
+// 2023.01.03
 
 int main(void) {
 	int a, b, c, result;

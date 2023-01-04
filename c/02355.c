@@ -1,7 +1,7 @@
 #pragma warning(disable:4996)
 #include <stdio.h>
 #include <string.h>
-// [baekjoon] 2355¹ø - º°Âï±â 12
+// [baekjoon] 2355ë²ˆ - ë³„ì°ê¸° 12
 
 int main() {
 

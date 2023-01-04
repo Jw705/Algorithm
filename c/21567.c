@@ -1,5 +1,5 @@
 #include <stdio.h>
-// [baekjoon] 21567¹ø - ¼ıÀÚÀÇ °³¼ö 2
+// [baekjoon] 21567ë²ˆ - ìˆ«ìì˜ ê°œìˆ˜ 2
 
 int main() {
 

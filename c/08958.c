@@ -1,13 +1,13 @@
 #pragma warning(disable:4996)
 #include <stdio.h>
-// [baekjoon] 8958¹ø - OXÄûÁî
+// [baekjoon] 8958ë²ˆ - OXí€´ì¦ˆ
 
 int main() {	
 
 	int arr[3000000];
 	int n = 0;			
-	scanf("%d", &n);	// Å×½ºÆ® ÄÉÀÌ½º °³¼ö ÀÔ·Â
-	getchar();			// ¿£ÅÍ Ã³¸®
+	scanf("%d", &n);	// í…ŒìŠ¤íŠ¸ ì¼€ì´ìŠ¤ ê°œìˆ˜ ì…ë ¥
+	getchar();			// ì—”í„° ì²˜ë¦¬
 
 	char ox[80];
 
