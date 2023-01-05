@@ -1,20 +1,20 @@
 #include <iostream>
+#include <string>
 using namespace std;
 // [baekjoon] 2744번 - 대소문자 바꾸기
 // 2023.01.04
 
-int main(void) {
-	int tmp;
-	int arr[31] = { 0 };
-
-	for (int i = 0; i < 28; i++) {
-		cin >> tmp;
-		arr[tmp] = 1;
-	}
-	for (int i = 1; i < 31; i++) {
-		if (arr[i] == 0) {
-			cout << i << "\n";
+int main() {
+	string str;
+	cin >> str;
+	for (int i = 0; i < str.size(); i++) {
+		if ('a' <= str[i] && str[i] <= 'z') {
+			str[i] -= 32;
 		}
+		else {
+			str[i] += 32;
+		}
+		cout << str[i];
 	}
 	return 0;
 }
