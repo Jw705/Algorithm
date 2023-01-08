@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 // [baekjoon] 10814번 - 나이순 정렬
-// 2023.01.04
+// 2023.01.06
 
 struct member {
 	int age;
