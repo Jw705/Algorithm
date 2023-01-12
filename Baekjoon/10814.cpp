@@ -16,7 +16,6 @@ bool compare(member a, member b) {
 
 int main() {
 	member peoples[100001];
-
 	int n;
 	cin >> n;
 
