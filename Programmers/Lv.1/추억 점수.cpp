@@ -1,5 +1,4 @@
 // 23.06.12
-// https://sirius7.tistory.com/
 
 #include <string>
 #include <vector>
