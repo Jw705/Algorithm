@@ -1,9 +1,4 @@
-N = int(input())
+import datetime
 
-str = "long int"
-i=4
-while i<N:
-    str = 'long ' + str
-    i+=4
-
-print(str)
+now = datetime.datetime.now()
+print(now.strftime('%Y-%m-%d'))
