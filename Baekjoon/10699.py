@@ -1,4 +1,6 @@
-import datetime
+A, I = map(int, input().split(' '))
 
-now = datetime.datetime.now()
-print(now.strftime('%Y-%m-%d'))
+for i in range(int(A*I*0.9),A*I+1):
+    if i/A>I-1:
+        print(i)
+        break;
