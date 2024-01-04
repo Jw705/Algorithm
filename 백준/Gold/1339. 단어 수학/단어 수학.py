@@ -1,31 +1,28 @@
-def strToInt(str):
+def str_to_int(s):
     res = 0
-    for c in range(len(str)):
-        res = res + sorted_dict[str[c]]['value'] * (10 ** (len(str) - c - 1))
+    for idx, char in enumerate(s):
+        res += sorted_dict[char]['value'] * (10 ** (len(s) - idx - 1))
     return res
 
 N = int(input())
-list = []
+word_list = []
 input_dict = {}
 
-for i in range(N):
-    str = input()
-    list.append(str)
-    for j in range(len(str)):
-        if str[j] in input_dict:
-            input_dict[str[j]]['primitive_value'] += 10**(len(str) - j - 1)
+for _ in range(N):
+    word = input()
+    word_list.append(word)
+    for j, char in enumerate(word):
+        if char in input_dict:
+            input_dict[char]['primitive_value'] += 10 ** (len(word) - j - 1)
         else:
-            input_dict[str[j]] = {'primitive_value': 10**(len(str) - j - 1)}
+            input_dict[char] = {'primitive_value': 10 ** (len(word) - j - 1)}
 
-sorted_dict = dict(sorted(input_dict.items(), key=lambda x: (x[1]['primitive_value']), reverse=True))
+sorted_dict = dict(sorted(input_dict.items(), key=lambda x: x[1]['primitive_value'], reverse=True))
 
 num = 9
-for i in sorted_dict:
-    sorted_dict[i]['value'] = num
-    num = num - 1
+for char, values in sorted_dict.items():
+    values['value'] = num
+    num -= 1
 
-res = 0
-for word in list:
-    res += strToInt(word)
-
-print(res)
+result = sum(str_to_int(word) for word in word_list)
+print(result)
