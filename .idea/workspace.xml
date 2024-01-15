@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9048e533-bff7-48df-91ad-83cf5a15b383" name="Changes" comment="feat: update 24.01.13&#10;&#10;24.01.13 풀이 내용입니다.">
+      <change afterPath="$PROJECT_DIR$/이코테/05-10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/이코테/05-11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/이코테/05-8 DFS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/이코테/05-9 BFS.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Jw705"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4868f741-84d7-4779-b5be-e4f38b9eab89" />
+        <option name="url" value="https://github.com/Jw705/Algorithm.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2ZySwPFaRGb5nIYN3ZMzBoLizY5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.01931.executor": "Run",
+    "Python.02754.executor": "Run",
+    "Python.04-1.executor": "Run",
+    "Python.04-2.executor": "Run",
+    "Python.04-3.executor": "Run",
+    "Python.04-4.executor": "Run",
+    "Python.04101.executor": "Run",
+    "Python.05355.executor": "Run",
+    "Python.05717.executor": "Run",
+    "Python.10699.executor": "Run",
+    "Python.11047.executor": "Run",
+    "Python.11319.executor": "Run",
+    "Python.3-2.executor": "Run",
+    "Python.5-8 DFS.executor": "Run",
+    "Python.5-9 BFS.executor": "Run",
+    "Python.Ch3-3.executor": "Run",
+    "Python.Ch3-4.executor": "Run",
+    "Python.s.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test2.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Coding/Algorithm/이코테",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Coding\Algorithm\이코테" />
+      <recent name="C:\Coding\Algorithm\Baekjoon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Coding\Algorithm" />
+      <recent name="C:\Coding\Algorithm\Baekjoon\c++" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="10699" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Baekjoon" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Baekjoon/10699.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.10699" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9048e533-bff7-48df-91ad-83cf5a15b383" name="Changes" comment="" />
+      <created>1703393065787</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703393065787</updated>
+      <workItem from="1703393067393" duration="62000" />
+      <workItem from="1703393142756" duration="5082000" />
+      <workItem from="1703509741611" duration="321000" />
+      <workItem from="1703595808201" duration="1146000" />
+      <workItem from="1703596967879" duration="2045000" />
+      <workItem from="1703684955116" duration="2427000" />
+      <workItem from="1703728119138" duration="628000" />
+      <workItem from="1703856893489" duration="1381000" />
+      <workItem from="1703942067082" duration="271000" />
+      <workItem from="1704024199275" duration="289000" />
+      <workItem from="1704082550812" duration="3000" />
+      <workItem from="1704116122687" duration="1230000" />
+      <workItem from="1704200617749" duration="8317000" />
+      <workItem from="1704291083779" duration="3094000" />
+      <workItem from="1704337466361" duration="1395000" />
+      <workItem from="1704365665490" duration="597000" />
+      <workItem from="1704515371940" duration="2363000" />
+      <workItem from="1704628339145" duration="1374000" />
+      <workItem from="1704629724375" duration="3560000" />
+      <workItem from="1704682900414" duration="7557000" />
+      <workItem from="1704849349791" duration="6471000" />
+      <workItem from="1705148431550" duration="810000" />
+      <workItem from="1705211507143" duration="4332000" />
+    </task>
+    <task id="LOCAL-00001" summary="pycharm 커밋 테스트">
+      <option name="closed" value="true" />
+      <created>1703412665896</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703412665896</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 이코테 연습내용 추가&#10;&#10;이것이 코딩 테스트다 책을 읽고 푼 내용도 추가합니다.">
+      <option name="closed" value="true" />
+      <created>1703416281932</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703416281932</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: update 23.12.15&#10;&#10;23.12.15 풀이 내용입니다.">
+      <option name="closed" value="true" />
+      <created>1703509792387</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703509792387</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: update 23.12.26&#10;&#10;23.12.26 풀이 내용입니다.">
+      <option name="closed" value="true" />
+      <created>1703598073512</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703598073512</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: update 23.12.27&#10;&#10;23.12.27 풀이 내용입니다.">
+      <option name="closed" value="true" />
+      <created>1703605950626</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703605950626</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: update 23.12.28&#10;&#10;23.12.28 풀이 내용입니다.">
+      <option name="closed" value="true" />
+      <created>1703728149777</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703728149777</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: update 23.12.29&#10;&#10;23.12.29 풀이 내용입니다.">
+      <option name="closed" value="true" />
+      <created>1703857081383</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703857081383</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: update 23.12.30&#10;&#10;23.12.30 풀이 내용입니다.">
+      <option name="closed" value="true" />
+      <created>1703942328562</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703942328563</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: update 23.12.31&#10;&#10;23.12.31 풀이 내용입니다.">
+      <option name="closed" value="true" />
+      <created>1704024419229</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704024419229</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: update 24.01.01&#10;&#10;24.01.01 풀이 내용입니다.">
+      <option name="closed" value="true" />
+      <created>1704117264268</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704117264268</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: update 24.01.07&#10;&#10;24.01.07 풀이 내용입니다.">
+      <option name="closed" value="true" />
+      <created>1704632698790</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704632698790</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: update 24.01.13&#10;&#10;24.01.13 풀이 내용입니다.">
+      <option name="closed" value="true" />
+      <created>1705211821458</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1705211821458</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pycharm 커밋 테스트" />
+    <MESSAGE value="feat: 이코테 연습내용 추가&#10;&#10;이것이 코딩 테스트다 책을 읽고 푼 내용도 추가합니다." />
+    <MESSAGE value="feat: update 23.12.15&#10;&#10;23.12.15 풀이 내용입니다." />
+    <MESSAGE value="feat: update 23.12.26&#10;&#10;23.12.26 풀이 내용입니다." />
+    <MESSAGE value="feat: update 23.12.27&#10;&#10;23.12.27 풀이 내용입니다." />
+    <MESSAGE value="feat: update 23.12.28&#10;&#10;23.12.28 풀이 내용입니다." />
+    <MESSAGE value="feat: update 23.12.29&#10;&#10;23.12.29 풀이 내용입니다." />
+    <MESSAGE value="feat: update 23.12.30&#10;&#10;23.12.30 풀이 내용입니다." />
+    <MESSAGE value="feat: update 23.12.31&#10;&#10;23.12.31 풀이 내용입니다." />
+    <MESSAGE value="feat: update 24.01.01&#10;&#10;24.01.01 풀이 내용입니다." />
+    <MESSAGE value="feat: update 24.01.07&#10;&#10;24.01.07 풀이 내용입니다." />
+    <MESSAGE value="feat: update 24.01.13&#10;&#10;24.01.13 풀이 내용입니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update 24.01.13&#10;&#10;24.01.13 풀이 내용입니다." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Algorithm$10699.coverage" NAME="10699 커버리지 결과" MODIFIED="1705148593698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
+    <SUITE FILE_PATH="coverage/Algorithm$5_9_BFS.coverage" NAME="5-9 BFS 커버리지 결과" MODIFIED="1705284640082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
+    <SUITE FILE_PATH="coverage/Algorithm$04_3.coverage" NAME="04-3 커버리지 결과" MODIFIED="1704630849008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
+    <SUITE FILE_PATH="coverage/Algorithm$5_8_DFS.coverage" NAME="5-8 DFS 커버리지 결과" MODIFIED="1705232938773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
+    <SUITE FILE_PATH="coverage/Algorithm$Ch3_4.coverage" NAME="Ch3-4 커버리지 결과" MODIFIED="1703416196404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
+    <SUITE FILE_PATH="coverage/Algorithm$s.coverage" NAME="s 커버리지 결과" MODIFIED="1704632341760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
+    <SUITE FILE_PATH="coverage/Algorithm$Ch3_3.coverage" NAME="Ch3-3 커버리지 결과" MODIFIED="1703415762851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
+    <SUITE FILE_PATH="coverage/Algorithm$01931.coverage" NAME="01931 커버리지 결과" MODIFIED="1703597749812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
+    <SUITE FILE_PATH="coverage/Algorithm$04_1.coverage" NAME="04-1 커버리지 결과" MODIFIED="1704628938817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
+    <SUITE FILE_PATH="coverage/Algorithm$02754.coverage" NAME="02754 커버리지 결과" MODIFIED="1704024376578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
+    <SUITE FILE_PATH="coverage/Algorithm$04_4.coverage" NAME="04-4 커버리지 결과" MODIFIED="1704632617358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
+    <SUITE FILE_PATH="coverage/Algorithm$test.coverage" NAME="test 커버리지 결과" MODIFIED="1705148636476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Algorithm$11319.coverage" NAME="11319 커버리지 결과" MODIFIED="1703596335608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
+    <SUITE FILE_PATH="coverage/Algorithm$05355.coverage" NAME="05355 커버리지 결과" MODIFIED="1703417307112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
+    <SUITE FILE_PATH="coverage/Algorithm$04101.coverage" NAME="04101 커버리지 결과" MODIFIED="1703605877296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
+    <SUITE FILE_PATH="coverage/Algorithm$05717.coverage" NAME="05717 커버리지 결과" MODIFIED="1703942269544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
+    <SUITE FILE_PATH="coverage/Algorithm$3_2.coverage" NAME="3-2 커버리지 결과" MODIFIED="1703415591687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
+    <SUITE FILE_PATH="coverage/Algorithm$11047.coverage" NAME="11047 커버리지 결과" MODIFIED="1703687183771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
+    <SUITE FILE_PATH="coverage/Algorithm$test2.coverage" NAME="test2 커버리지 결과" MODIFIED="1704293658810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
+    <SUITE FILE_PATH="coverage/Algorithm$04_2.coverage" NAME="04-2 커버리지 결과" MODIFIED="1704629557444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
+  </component>
+</project>
