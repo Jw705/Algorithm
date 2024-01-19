@@ -9,7 +9,7 @@ for _ in range(n):
 
 
 def bfs(graph, x, y):
-    queue = deque([x, y])
+    queue = deque((x, y))
     dx = [-1, 1, 0, 0]
     dy = [0, 0, -1, 1]
     length = 1
@@ -22,7 +22,7 @@ def bfs(graph, x, y):
                 continue
             if graph[nx][ny] == 1:
                 graph[nx][ny] = graph[x][y] + 1
-                queue.append([dx, dy])
+                queue.append((nx, ny))
 
     return graph
 
