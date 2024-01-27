@@ -15,14 +15,14 @@ for i in range(0, m):
     graph[data[0]].append([data[1], data[2]])
     graph[data[1]].append([data[0], data[2]])
 
-result = -1
+result = 10**10
 
 
 def dfs(v, money, max_charge):
     global result
     if v == b:
         # print([v, money, max_charge], end=' ')
-        result = max(result, max_charge)
+        result = min(result, max_charge)
 
     else:
         visited[v] = True
@@ -33,13 +33,6 @@ def dfs(v, money, max_charge):
 
 
 dfs(a, c, 0)
+if result == 10**10:
+    result = -1
 print(result)
-
-'''
-5 5 1 3 10
-1 2 5
-2 3 5
-1 4 1
-4 5 6
-5 3 1
-'''
