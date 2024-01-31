@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9048e533-bff7-48df-91ad-83cf5a15b383" name="Changes" comment="feat: update 24.01.22&#10;&#10;24.01.22 풀이 내용입니다.">
-      <change afterPath="$PROJECT_DIR$/이코테/09-01 다익스트라 간단.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이코테/09-02 다익스트라 힙.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -52,48 +55,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.01931.executor": "Run",
-    "Python.02754.executor": "Run",
-    "Python.04-1.executor": "Run",
-    "Python.04-2.executor": "Run",
-    "Python.04-3.executor": "Run",
-    "Python.04-4.executor": "Run",
-    "Python.04101.executor": "Run",
-    "Python.05355.executor": "Run",
-    "Python.05717.executor": "Run",
-    "Python.06-11.executor": "Run",
-    "Python.06-12.executor": "Run",
-    "Python.07-2.executor": "Run",
-    "Python.07-3 이진탐색 반복문.executor": "Run",
-    "Python.07-5.executor": "Run",
-    "Python.07-8.executor": "Run",
-    "Python.09-01 다익스트라 간단.executor": "Run",
-    "Python.10699.executor": "Run",
-    "Python.11047.executor": "Run",
-    "Python.11319.executor": "Run",
-    "Python.3-2.executor": "Run",
-    "Python.5-8 DFS.executor": "Run",
-    "Python.5-9 BFS.executor": "Run",
-    "Python.Ch3-3.executor": "Run",
-    "Python.Ch3-4.executor": "Run",
-    "Python.s.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.test2.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Coding/Algorithm/이코테",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.01931.executor&quot;: &quot;Run&quot;,
+    &quot;Python.02754.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04-1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04-2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04-3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04-4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04101.executor&quot;: &quot;Run&quot;,
+    &quot;Python.05355.executor&quot;: &quot;Run&quot;,
+    &quot;Python.05717.executor&quot;: &quot;Run&quot;,
+    &quot;Python.06-11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.06-12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.07-2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.07-3 이진탐색 반복문.executor&quot;: &quot;Run&quot;,
+    &quot;Python.07-5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.07-8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.09-01 다익스트라 간단.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10699.executor&quot;: &quot;Run&quot;,
+    &quot;Python.11047.executor&quot;: &quot;Run&quot;,
+    &quot;Python.11319.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3-2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5-8 DFS.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5-9 BFS.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Ch3-3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Ch3-4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.s.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Coding/Algorithm/이코테&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Coding\Algorithm\이코테" />
@@ -130,6 +133,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
@@ -187,6 +191,8 @@
       <workItem from="1706241705061" duration="1069000" />
       <workItem from="1706331358126" duration="6349000" />
       <workItem from="1706445982959" duration="1718000" />
+      <workItem from="1706666863518" duration="37000" />
+      <workItem from="1706667065020" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="pycharm 커밋 테스트">
       <option name="closed" value="true" />
