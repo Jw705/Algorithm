@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9048e533-bff7-48df-91ad-83cf5a15b383" name="Changes" comment="feat: update 24.02.07&#10;&#10;24.02.07 학습 내용입니다.&#10;플로이드 워셜 알고리즘을 학습했습니다.">
-      <change afterPath="$PROJECT_DIR$/이코테/08-01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이코테/08-02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이코테/08-03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이코테/08-04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이코테/08-05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이코테/08-06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이코테/08-07.py" afterDir="false" />
+    <list default="true" id="9048e533-bff7-48df-91ad-83cf5a15b383" name="Changes" comment="feat: update 24.02.14&#10;&#10;24.02.14 학습 내용입니다.&#10;dp 알고리즘을 학습했습니다.">
+      <change afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/이코테/10-06 위상정렬.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,64 +57,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.01931.executor": "Run",
-    "Python.02754.executor": "Run",
-    "Python.04-1.executor": "Run",
-    "Python.04-2.executor": "Run",
-    "Python.04-3.executor": "Run",
-    "Python.04-4.executor": "Run",
-    "Python.04101.executor": "Run",
-    "Python.05355.executor": "Run",
-    "Python.05717.executor": "Run",
-    "Python.06-11.executor": "Run",
-    "Python.06-12.executor": "Run",
-    "Python.07-2.executor": "Run",
-    "Python.07-3 이진탐색 반복문.executor": "Run",
-    "Python.07-5.executor": "Run",
-    "Python.07-8.executor": "Run",
-    "Python.08-01.executor": "Run",
-    "Python.08-02.executor": "Run",
-    "Python.08-03.executor": "Run",
-    "Python.08-04.executor": "Run",
-    "Python.08-05.executor": "Run",
-    "Python.08-06.executor": "Run",
-    "Python.08-07.executor": "Run",
-    "Python.09-01 다익스트라 간단.executor": "Run",
-    "Python.09-03 플로이드 워셜.executor": "Run",
-    "Python.09-04.executor": "Run",
-    "Python.09-05.executor": "Run",
-    "Python.10-01 서로소 집합 union.executor": "Run",
-    "Python.10-03 서로소 집합 union 개선.executor": "Run",
-    "Python.10-04 cycle 판별.executor": "Run",
-    "Python.10-05 크루스칼.executor": "Run",
-    "Python.10699.executor": "Run",
-    "Python.11047.executor": "Run",
-    "Python.11319.executor": "Run",
-    "Python.3-2.executor": "Run",
-    "Python.5-8 DFS.executor": "Run",
-    "Python.5-9 BFS.executor": "Run",
-    "Python.Ch3-3.executor": "Run",
-    "Python.Ch3-4.executor": "Run",
-    "Python.s.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.test2.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Coding/Algorithm/이코테",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.01931.executor&quot;: &quot;Run&quot;,
+    &quot;Python.02754.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04-1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04-2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04-3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04-4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04101.executor&quot;: &quot;Run&quot;,
+    &quot;Python.05355.executor&quot;: &quot;Run&quot;,
+    &quot;Python.05717.executor&quot;: &quot;Run&quot;,
+    &quot;Python.06-11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.06-12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.07-2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.07-3 이진탐색 반복문.executor&quot;: &quot;Run&quot;,
+    &quot;Python.07-5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.07-8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.08-01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.08-02.executor&quot;: &quot;Run&quot;,
+    &quot;Python.08-03.executor&quot;: &quot;Run&quot;,
+    &quot;Python.08-04.executor&quot;: &quot;Run&quot;,
+    &quot;Python.08-05.executor&quot;: &quot;Run&quot;,
+    &quot;Python.08-06.executor&quot;: &quot;Run&quot;,
+    &quot;Python.08-07.executor&quot;: &quot;Run&quot;,
+    &quot;Python.09-01 다익스트라 간단.executor&quot;: &quot;Run&quot;,
+    &quot;Python.09-03 플로이드 워셜.executor&quot;: &quot;Run&quot;,
+    &quot;Python.09-04.executor&quot;: &quot;Run&quot;,
+    &quot;Python.09-05.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10-01 서로소 집합 union.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10-03 서로소 집합 union 개선.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10-04 cycle 판별.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10-05 크루스칼.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10699.executor&quot;: &quot;Run&quot;,
+    &quot;Python.11047.executor&quot;: &quot;Run&quot;,
+    &quot;Python.11319.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3-2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5-8 DFS.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5-9 BFS.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Ch3-3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Ch3-4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.s.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Coding/Algorithm&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Coding\Algorithm" />
       <recent name="C:\Coding\Algorithm\이코테" />
       <recent name="C:\Coding\Algorithm\Baekjoon" />
     </key>
@@ -230,7 +226,21 @@
       <workItem from="1707353076398" duration="1812000" />
       <workItem from="1707392733554" duration="86000" />
       <workItem from="1707833760568" duration="553000" />
-      <workItem from="1707876940223" duration="3092000" />
+      <workItem from="1707876940223" duration="11493000" />
+      <workItem from="1707900538594" duration="597000" />
+      <workItem from="1707964635927" duration="2822000" />
+      <workItem from="1707997610171" duration="1735000" />
+      <workItem from="1708050942656" duration="61000" />
+      <workItem from="1708051321161" duration="3000" />
+      <workItem from="1708086679009" duration="1136000" />
+      <workItem from="1708136016187" duration="5717000" />
+      <workItem from="1708151431961" duration="598000" />
+      <workItem from="1708435209085" duration="4500000" />
+      <workItem from="1708513355686" duration="2772000" />
+      <workItem from="1708561161065" duration="3000" />
+      <workItem from="1708652327645" duration="5000" />
+      <workItem from="1708668662547" duration="1250000" />
+      <workItem from="1708923671822" duration="8296000" />
     </task>
     <task id="LOCAL-00001" summary="pycharm 커밋 테스트">
       <option name="closed" value="true" />
@@ -384,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707311593967</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat: update 24.02.14&#10;&#10;24.02.14 학습 내용입니다.&#10;dp 알고리즘을 학습했습니다.">
+      <option name="closed" value="true" />
+      <created>1707880191125</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1707880191125</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +439,8 @@
     <MESSAGE value="feat: update 24.01.31&#10;&#10;24.01.31 풀이 내용입니다.&#10;이코테 9-5 문제를 풀이하고,&#10;꼬인 커밋 정리를 진행했습니다." />
     <MESSAGE value="feat: update 24.02.05&#10;&#10;24.02.05 학습 내용입니다.&#10;이코테 크루스칼 알고리즘을 학습했습니다." />
     <MESSAGE value="feat: update 24.02.07&#10;&#10;24.02.07 학습 내용입니다.&#10;플로이드 워셜 알고리즘을 학습했습니다." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update 24.02.07&#10;&#10;24.02.07 학습 내용입니다.&#10;플로이드 워셜 알고리즘을 학습했습니다." />
+    <MESSAGE value="feat: update 24.02.14&#10;&#10;24.02.14 학습 내용입니다.&#10;dp 알고리즘을 학습했습니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update 24.02.14&#10;&#10;24.02.14 학습 내용입니다.&#10;dp 알고리즘을 학습했습니다." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -464,7 +483,7 @@
     <SUITE FILE_PATH="coverage/Algorithm$04_1.coverage" NAME="04-1 커버리지 결과" MODIFIED="1704628938817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
     <SUITE FILE_PATH="coverage/Algorithm$02754.coverage" NAME="02754 커버리지 결과" MODIFIED="1704024376578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
     <SUITE FILE_PATH="coverage/Algorithm$04_4.coverage" NAME="04-4 커버리지 결과" MODIFIED="1704632617358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
-    <SUITE FILE_PATH="coverage/Algorithm$test.coverage" NAME="test 커버리지 결과" MODIFIED="1707834237518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Algorithm$test.coverage" NAME="test 커버리지 결과" MODIFIED="1708950157384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorithm$11319.coverage" NAME="11319 커버리지 결과" MODIFIED="1703596335608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
     <SUITE FILE_PATH="coverage/Algorithm$07_8.coverage" NAME="07-8 커버리지 결과" MODIFIED="1705888493708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
     <SUITE FILE_PATH="coverage/Algorithm$05355.coverage" NAME="05355 커버리지 결과" MODIFIED="1703417307112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
@@ -472,7 +491,7 @@
     <SUITE FILE_PATH="coverage/Algorithm$08_04.coverage" NAME="08-04 커버리지 결과" MODIFIED="1707877329923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
     <SUITE FILE_PATH="coverage/Algorithm$04101.coverage" NAME="04101 커버리지 결과" MODIFIED="1703605877296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
     <SUITE FILE_PATH="coverage/Algorithm$05717.coverage" NAME="05717 커버리지 결과" MODIFIED="1703942269544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baekjoon" />
-    <SUITE FILE_PATH="coverage/Algorithm$08_07.coverage" NAME="08-07 커버리지 결과" MODIFIED="1707880042039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
+    <SUITE FILE_PATH="coverage/Algorithm$08_07.coverage" NAME="08-07 커버리지 결과" MODIFIED="1707880132397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
     <SUITE FILE_PATH="coverage/Algorithm$3_2.coverage" NAME="3-2 커버리지 결과" MODIFIED="1703415591687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
     <SUITE FILE_PATH="coverage/Algorithm$07_3__.coverage" NAME="07-3 이진탐색 반복문 커버리지 결과" MODIFIED="1705835603713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/이코테" />
   </component>
