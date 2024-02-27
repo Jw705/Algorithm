@@ -21,7 +21,7 @@ def topology_sort():
         if indegree[i] == 0:
             stack.append(i)
     while stack:
-        s = stack.pop(0)
+        s = stack.pop()
         res.append(s)
         for i in graph[s]:
             indegree[i] -= 1
