@@ -8,9 +8,9 @@ def solution(targets):
     x = 0
     for target in targets:
         if x > target[0]:
-            x = min(x,target[1])
+            x = min(x,target[1]-0.1)
         else:
-            x = target[1] 
+            x = target[1]-0.1
             answer += 1
 
     return answer
