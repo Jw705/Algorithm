@@ -1,3 +1,5 @@
+# 24.03.08 28m
+
 def solution(picks, minerals):
     answer = 0
     피로도 = [[1,1,1],[5,1,1],[25,5,1]]
