@@ -1,8 +1,4 @@
-def gcb(max,min):
-    tmp = max%min
-    
-    return 1
-    
+# 24.03.21 30m
 
 def solution(arrayA, arrayB):
     answer = 0
