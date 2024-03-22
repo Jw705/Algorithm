@@ -31,9 +31,9 @@ def solution(orders, course):
     
     # 최소 2명 이상의 손님으로부터 주문된 코스만 정답에 추가
     for i in course: 
-        for c in max_course[i]:
-            if c[1]>=2:
-                answer.append(c[0])
+        for course in max_course[i]:
+            if course[1]>=2:
+                answer.append(course[0])
     
     # 알파벳 순서로 정렬하여 반환
     return sorted(answer)
