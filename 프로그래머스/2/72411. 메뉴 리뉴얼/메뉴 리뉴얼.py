@@ -1,3 +1,5 @@
+# 24.03.22 45m
+
 from itertools import combinations
 
 def solution(orders, course):
