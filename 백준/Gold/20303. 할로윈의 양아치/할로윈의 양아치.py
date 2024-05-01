@@ -31,28 +31,20 @@ for i in range(m):
     union_parent(parent, a, b)
 
 data = {}
-
-# O(n)
 for i in range(n):
     tmp = find_parent(parent, i + 1)
     if tmp not in data:
-        data[tmp] = [1,candies[i]]
+        data[tmp] = [1, candies[i]]
     else:
         data[tmp][0] = data[tmp][0] + 1
         data[tmp][1] = data[tmp][1] + candies[i]
-
-# print(data)
 
 arr = [[0, 0]]
 for d in data.values():
     arr.append(d)
 
-# print(arr)
-
 group_num = len(arr)
-
 dp = [[0] * k for _ in range(group_num)]
-
 for i in range(1, group_num):
     for j in range(1, k):
         w, v = arr[i]
@@ -61,23 +53,4 @@ for i in range(1, group_num):
         else:
             dp[i][j] = dp[i - 1][j]
 
-# print(dp)
 print(dp[group_num - 1][k - 1])
-
-'''
-10 6 6
-9 15 4 4 1 5 19 14 20 5
-1 3
-2 5
-4 9
-6 2
-7 8
-6 10
-
-5 4 4
-9 9 9 9 9
-1 2
-2 3
-3 4
-4 5
-'''
