@@ -34,23 +34,22 @@ data = {}
 for i in range(n):
     tmp = find_parent(parent, i + 1)
     if tmp not in data:
-        data[tmp] = [1, candies[i]]
+        data[tmp] = {'child_num': 1, 'candy_num': candies[i]}
     else:
-        data[tmp][0] = data[tmp][0] + 1
-        data[tmp][1] = data[tmp][1] + candies[i]
+        data[tmp]['child_num'] = data[tmp]['child_num'] + 1
+        data[tmp]['candy_num'] = data[tmp]['candy_num'] + candies[i]
 
 arr = [[0, 0]]
 for d in data.values():
-    arr.append(d)
+    arr.append([d['child_num'], d['candy_num']])
 
 group_num = len(arr)
-dp = [[0] * k for _ in range(group_num)]
+dp = [0 for _ in range(k)]
+
 for i in range(1, group_num):
-    for j in range(1, k):
+    for j in range(k - 1, 0, -1):
         w, v = arr[i]
         if j >= w:
-            dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - w] + v)
-        else:
-            dp[i][j] = dp[i - 1][j]
-
-print(dp[group_num - 1][k - 1])
+            dp[j] = max(dp[j], dp[j - w] + v)
+            
+print(dp[k - 1])
