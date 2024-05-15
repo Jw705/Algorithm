@@ -11,10 +11,10 @@ for i in range(n):
         prefix_sum[j] += 1
 
 a = 0
-b = 0
-tmp_sum = 0
+b = 1
+tmp_sum = prefix_sum[0]
 
-while 0 <= a <= b and b < 1000001:
+while a <= b and b < 1000001:
     if tmp_sum == k:
         print(a, b)
         sys.exit()
