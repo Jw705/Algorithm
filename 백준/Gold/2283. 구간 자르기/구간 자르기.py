@@ -13,12 +13,11 @@ for i in range(n):
 a = 0
 b = 0
 tmp_sum = 0
-flag = False
 
 while 0 <= a <= b and b < 1000001:
     if tmp_sum == k:
-        flag = True
-        break
+        print(a, b)
+        sys.exit()
     elif tmp_sum > k:
         tmp_sum -= prefix_sum[a]
         a += 1
@@ -26,15 +25,4 @@ while 0 <= a <= b and b < 1000001:
         tmp_sum += prefix_sum[b]
         b += 1
 
-if flag:
-    print(a, b)
-else:
-    print(0, 0)
-
-'''
-4 25
-0 10
-3 15
-0 8
-3 10
-'''
+print(0, 0)
