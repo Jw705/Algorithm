@@ -7,8 +7,13 @@ prefix_sum = [0] * 1000001
 
 for i in range(n):
     s, e = map(int, input().split())
-    for j in range(s, e):
-        prefix_sum[j] += 1
+    prefix_sum[s] += 1
+    prefix_sum[e] -= 1
+
+current = 0
+for i in range(0, 1000001):
+    current += prefix_sum[i]
+    prefix_sum[i] = current
 
 a = 0
 b = 1
