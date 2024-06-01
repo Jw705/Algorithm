@@ -4,10 +4,9 @@ input = sys.stdin.readline
 
 n = int(input())
 
-dp = [0 for _ in range(n + 1)]
+dp = [0 for _ in range(31)]
 
-if n >= 2:
-    dp[2] = 3
+dp[2] = 3
 
 for i in range(4, n + 1, 2):
     dp[i] += 2
