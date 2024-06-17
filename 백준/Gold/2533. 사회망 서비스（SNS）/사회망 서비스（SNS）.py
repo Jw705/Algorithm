@@ -9,7 +9,7 @@ def dfs(graph, v, visited, parent):
     # 현재 노드 방문 처리
     visited[v] = 1
 
-    # 외부노드(leaf)이면 부모를 early adaptor로 설정
+    # 현재 노드가 외부노드(leaf)이면 부모를 early adaptor로 설정
     if len(graph[v]) == 1 and graph[v][0] == parent:
         visited[parent] = 'early adaptor'
 
@@ -19,16 +19,9 @@ def dfs(graph, v, visited, parent):
             if visited[i] == 0:
                 dfs(graph, i, visited, v)
 
-        # 자식 노드 순회를 끝낸 후, 본인이 early adaptor가 아닐 때
+        # 자식 노드 방문을 끝낸 후, 본인이 early adaptor가 아니면 부모를 early adaptor로 설정
         if visited[v] != 'early adaptor':
-            # 본인 부모를 early adaptor로 설정
             visited[parent] = 'early adaptor'
-            '''
-            # 본인 부모를 early adaptor로 설정
-            visited[v] = 2
-            if len(graph[v]) > 0:
-                visited[graph[v][0]] = 'early adaptor'
-            '''
 
 
 n = int(input())
