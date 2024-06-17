@@ -21,11 +21,8 @@ def dfs(graph, v, visited, parent):
 
         # 자식 노드 순회를 끝낸 후, 본인이 early adaptor가 아닐 때
         if visited[v] != 'early adaptor':
-            # early adaptor가 아닌 자식이 있으면 본인이 early adaptor가 된다.
-            for j in graph[v]:
-                if visited[j] != 'early adaptor' and j != parent:
-                    visited[v] = 'early adaptor'
-                    return
+            # 본인 부모를 early adaptor로 설정
+            visited[parent] = 'early adaptor'
             '''
             # 본인 부모를 early adaptor로 설정
             visited[v] = 2
@@ -46,7 +43,7 @@ for _ in range(n - 1):
 dfs(graph, 1, visited, 0)
 
 res = 0
-for i in range(n + 1):
+for i in range(1, n + 1):
     if visited[i] == 'early adaptor':
         res += 1
 
