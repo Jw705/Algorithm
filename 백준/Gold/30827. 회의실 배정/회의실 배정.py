@@ -15,14 +15,11 @@ data.sort(key=lambda x: x[1])
 result = 0
 
 for s, e in data:
-    room_num = -1
     for i in range(k):
         if use_room_info[i][1] < s:
-            room_num = i
+            use_room_info[i] = [s, e]
+            use_room_info.sort(key=lambda x: x[1], reverse=True)
+            result += 1
             break
-    if room_num >= 0:
-        use_room_info[room_num] = [s, e]
-        use_room_info.sort(key=lambda x: x[1], reverse=True)
-        result += 1
 
 print(result)
