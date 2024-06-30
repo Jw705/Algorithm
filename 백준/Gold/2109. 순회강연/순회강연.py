@@ -13,7 +13,7 @@ for _ in range(n):
     p, d = map(int, input().split())
     data.append([p, d])
 
-data.sort(key=lambda x: (x[1], x[0]), reverse=True)
+data.sort(key=lambda x: x[1], reverse=True)
 
 
 def fine_schedule(p, d):
