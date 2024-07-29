@@ -7,11 +7,14 @@ result = 0
 board = [0] * n
 
 
-def is_safe(x):
+def is_possible(x, y):
     for i in range(x):
-        if board[x] == board[i] or abs(board[x] - board[i]) == abs(x - i):
+        # 같은 열에 다른 퀸이 있으면 불가능
+        if y == board[i]:
             return False
-
+        # 대각선 위치에 다른 퀸이 있으면 불가능
+        elif abs(y - board[i]) == abs(x - i):
+            return False
     return True
 
 
@@ -23,7 +26,7 @@ def n_queens(x):
 
     for y in range(n):
         board[x] = y
-        if is_safe(x):
+        if is_possible(x, y):
             n_queens(x + 1)
 
 
