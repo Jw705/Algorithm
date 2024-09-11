@@ -4,7 +4,6 @@ from collections import deque
 input = sys.stdin.readline
 
 A, B = map(int, input().split())
-visited = []
 
 
 def bfs():
@@ -18,12 +17,10 @@ def bfs():
             print(cnt + 1)
             return
 
-        if calc1 <= B and not (calc1 in visited):
+        if calc1 <= B:
             queue.append([calc1, cnt + 1])
-            visited.append(calc1)
-        if calc2 <= B and not (calc2 in visited):
+        if calc2 <= B:
             queue.append([calc2, cnt + 1])
-            visited.append(calc2)
     print(-1)
 
 
