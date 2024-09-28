@@ -14,6 +14,8 @@ for _ in range(m):
 
 def dijkstra(start):
     q = []
+    distance = [INF] * (n + 1)
+
     # 시작 노드로 가기 위한 최단 경로는 0으로 설정하여, 큐에 삽입
     # 우선순위 큐에 삽입하는 튜플은 (거리, 노드) → heapq라이브러리는 튜플 첫 원소 기준으로 최소힙 구성
     heapq.heappush(q, (0, start))
@@ -32,16 +34,11 @@ def dijkstra(start):
                 distance[node] = cost
                 heapq.heappush(q, (cost, node))
 
+    return distance
 
-visited = [False] * (n + 1)
-distance = [INF] * (n + 1)
-dijkstra(x)
-sum_arr = distance
+sum_arr = dijkstra(x)
 
 for i in range(1, n + 1):
-    visited = [False] * (n + 1)
-    distance = [INF] * (n + 1)
-    dijkstra(i)
-    sum_arr[i] += distance[x]
+    sum_arr[i] += dijkstra(i)[x]
 
 print(max(sum_arr[1:]))
