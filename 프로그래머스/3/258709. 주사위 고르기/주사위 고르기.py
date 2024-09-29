@@ -2,51 +2,55 @@ from itertools import combinations
 from itertools import product
 from bisect import bisect_left
 
-
 def solution(dice):
     answer = []    
     dice_cnt = len(dice)
     
-    주사위선택결과 = list(combinations(range(dice_cnt),dice_cnt//2))
-    주사위굴린결과 = list(product(range(6), repeat=dice_cnt//2))
+    # 주사위 선택 조합 저장
+    dice_combinations = list(combinations(range(dice_cnt), dice_cnt//2))
+    # 주사위 굴려서 나오는 경우 (중복 순열) 저장
+    dice_roll_results = list(product(range(6), repeat=dice_cnt//2))
     
-    배열 = []
-    
-    for i_dice in 주사위선택결과:
-        I = []
-        for 결과 in 주사위굴린결과:
-            a_result = 1
+    # 조합별로 굴려서 나온 결과의 합 저장
+    score_arrays = []    
+    for selected_dice in dice_combinations:
+        dice_scores = []
+        for roll_result in dice_roll_results:
+            total_score = 1
             for i in range(dice_cnt//2):
-                a_result += dice[i_dice[i]][결과[i]]
-            I.append(a_result)
-        I.sort()
-        배열.append(I)
+                total_score += dice[selected_dice[i]][roll_result[i]]
+            dice_scores.append(total_score)
+        dice_scores.sort()
+        score_arrays.append(dice_scores)
     
-    max_win_count = 0
-    win_count = [-1 for _ in range(len(주사위선택결과))]
+    # 조합별로 승리하는 횟수 저장
+    win_count = [-1 for _ in range(len(dice_combinations))]
     
-    for k in range(len(주사위선택결과)):  
+    # 조합별 승리 횟수 계산
+    for k in range(len(dice_combinations)):  
         if win_count[k] != -1:
             continue
         
-        a_dice = 주사위선택결과[k]
+        # b는 전체 주사위에서 a를 제외한 나머지
+        a_dice = dice_combinations[k]
         b_dice = []
-        주사위배열 = list(주사위선택결과[k])
         for i in range(dice_cnt):
             if i not in a_dice:
-                주사위배열.append(i)  
                 b_dice.append(i)
         b_dice = tuple(b_dice)
         
-        a_index = 주사위선택결과.index(a_dice)
-        b_index = 주사위선택결과.index(b_dice)
-        a_wins = sum(bisect_left(배열[b_index], num) for num in 배열[a_index])
-        b_wins = sum(bisect_left(배열[a_index], num) for num in 배열[b_index])
+        a_index = dice_combinations.index(a_dice)
+        b_index = dice_combinations.index(b_dice)
+        
+        # a의 결과를 이진탐색으로 b 결과 배열과 비교 
+        # b결과 배열에서 a결과보다 작은 값의 개수가 승리 횟수         
+        a_wins = sum(bisect_left(score_arrays[b_index], score) for score in score_arrays[a_index])
+        b_wins = sum(bisect_left(score_arrays[a_index], score) for score in score_arrays[b_index])
         
         win_count[a_index] = a_wins
         win_count[b_index] = b_wins
         
-    for 주사위 in 주사위선택결과[win_count.index(max(win_count))]:
-        answer.append(주사위+1)
+    for dice in dice_combinations[win_count.index(max(win_count))]:
+        answer.append(dice + 1)
     
     return answer
