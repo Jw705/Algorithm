@@ -4,13 +4,11 @@ input = sys.stdin.readline
 
 n = int(input())
 
-answer = []
 t = [" "] * (n - 1) + ["*"] + [" "] * (n - 1)
 print("".join(t))
-answer.append(t)
+recent_layer = t
 
 for i in range(n - 1):
-    recent_layer = answer[-1]
     new_layer = []
 
     j = 0
@@ -43,4 +41,4 @@ for i in range(n - 1):
             new_layer.append(recent_layer[j])
             j += 1
     print("".join(new_layer))
-    answer.append(new_layer)
+    recent_layer = new_layer
