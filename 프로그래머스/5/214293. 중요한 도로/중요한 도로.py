@@ -1,8 +1,7 @@
 import heapq
 from collections import deque
 
-def solution(n, roads):
-    
+def solution(n, roads):    
     answer = []
     answer_list = [False for i in range(len(roads)+1)]
     
@@ -19,7 +18,7 @@ def solution(n, roads):
         path.clear()
         for _ in range (n+1):
             path.append([])
-        distance = [999999987654321] * (n + 1)
+        distance = [(10**9)*2*200000] * (n + 1)
         distance[start] = 0
         
         q = []
@@ -56,11 +55,11 @@ def solution(n, roads):
     visited = [False for _ in range(n+1)]
     visited[n] = True
     while queue:
-        qsize = len(queue)
-        for _ in range(qsize):
+        queue_size = len(queue)
+        for _ in range(queue_size):
             node = queue.popleft()
             for prev_node, road_num in path[node]:   
-                if len(path[node]) == 1 and qsize == 1:
+                if len(path[node]) == 1 and queue_size == 1:
                     answer_list[road_num] = True
                 if visited[prev_node]:
                     continue
