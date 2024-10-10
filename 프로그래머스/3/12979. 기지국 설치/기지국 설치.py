@@ -1,3 +1,5 @@
+# 49m
+
 def solution(n, stations, w):
     answer = 0
     radio_range = []
@@ -7,13 +9,11 @@ def solution(n, stations, w):
     
     cur_locate = 1
     for r in radio_range:
-        # print(cur_locate, r)
         if cur_locate < r[0]:
             unreachable_range = r[0] - cur_locate
             answer += (r[0] - cur_locate) // (w * 2 + 1)
             if unreachable_range % (w * 2 + 1) > 0:
                 answer += 1
-            # print(r[0] - cur_locate)
         cur_locate = r[1] + 1  
 
     return answer
