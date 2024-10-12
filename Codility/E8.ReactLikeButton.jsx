@@ -20,8 +20,6 @@ export default class LikeButton extends Component {
     };
 
     render() {
-        const buttonClass = `like-button ${this.state.isLiked ? 'liked' : ''}`
-
         return (
             <>
                 <div>
