@@ -1,4 +1,4 @@
-# 40m
+# 24.10.23 40m
 
 def solution(a):
     seq_info = {}
@@ -9,11 +9,11 @@ def solution(a):
             seq_info[a[i]] = [0, -1]
 
         if i > 0 and seq_info[a[i]][1] < i - 1 and a[i - 1] != a[i]:
-            # [ a[i-1], [a[i] ]를 스타 수열에 추가할 수 있다면
+            # [ a[i-1], [a[i] ]를 스타 수열에 추가할 수 있는 경우
             seq_info[a[i]][0] += 2
             seq_info[a[i]][1] = i
         elif i < len(a) - 1 and seq_info[a[i]][1] < i and a[i + 1] != a[i]:
-            # [ a[i], [a[i + 1] ]를 스타 수열에 추가할 수 있다면
+            # [ a[i], [a[i + 1] ]를 스타 수열에 추가할 수 있는 경우
             seq_info[a[i]][0] += 2
             seq_info[a[i]][1] = i + 1
 
