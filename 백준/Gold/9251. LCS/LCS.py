@@ -5,7 +5,7 @@ input = sys.stdin.readline
 str1 = input()
 str2 = input()
 
-n = max(len(str1), len(str2))
+n = max(len(str1)-1, len(str2)-1)
 dp = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
 
 answer = 0
