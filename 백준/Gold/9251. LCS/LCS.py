@@ -2,22 +2,25 @@ import sys
 
 input = sys.stdin.readline
 
-str1 = input()
-str2 = input()
-
-n = max(len(str1)-1, len(str2)-1)
-dp = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
-
-answer = 0
-for i in range(1, n + 1):
-    for j in range(1, n + 1):
-        if i >= len(str2) or j >= len(str1):
-            continue
-        if str2[i - 1] == str1[j - 1]:
-            dp[i][j] = dp[i - 1][j - 1] + 1
-            answer = max(answer, dp[i][j])
-        else:
-            dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+str1 = input()[:-1]
+str2 = input()[:-1]
 
 
-print(answer)
+def findLCS(str1, str2):
+    m = len(str1)
+    n = len(str2)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+
+    # DP 테이블 채우기
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if str1[i - 1] == str2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            else:
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+
+    # 최종 결과 반환
+    return dp[m][n]
+
+
+print(findLCS(str1, str2))
