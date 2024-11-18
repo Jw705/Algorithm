@@ -3,8 +3,8 @@ def solution(commands):
     table = [['EMPTY' for _ in range(51)] for _ in range(51)]
     parent = [[(i, j) for j in range(51)] for i in range(51)]
 
-    for i in range(len(commands)):
-        cmd = list(commands[i].split())
+    for command in commands:
+        cmd = command.split()
         if cmd[0] == 'UPDATE':
             if len(cmd) == 4:
                 r, c, value = int(cmd[1]), int(cmd[2]), cmd[3]
