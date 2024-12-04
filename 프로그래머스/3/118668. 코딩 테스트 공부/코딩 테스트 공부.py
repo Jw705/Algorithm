@@ -7,9 +7,10 @@ def solution(alp, cop, problems):
         target_alp = max(target_alp, problem[0])
         target_cop = max(target_cop, problem[1])
 
-    dp = [[int(1e9) for _ in range(455)] for _ in range(455)]
-    alp = min(alp, target_alp)  # 둘중 하나라도 목표값을 넘어가면 안된다.
+    dp = [[int(1e9) for _ in range(451)] for _ in range(451)]
+    alp = min(alp, target_alp)
     cop = min(cop, target_cop)
+    
     dp[alp][cop] = 0
 
     for i in range(alp, target_alp + 1):
