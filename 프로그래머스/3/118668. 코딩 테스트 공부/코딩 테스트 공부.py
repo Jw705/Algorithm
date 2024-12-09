@@ -6,7 +6,8 @@ def solution(alp, cop, problems):
     for problem in problems:
         target_alp = max(target_alp, problem[0])
         target_cop = max(target_cop, problem[1])
-
+    
+    # dp[i][j] : (알고력 i, 코딩력 j) 상태에 도달하는 데 필요한 최단 시간
     dp = [[int(1e9) for _ in range(451)] for _ in range(451)]
     alp = min(alp, target_alp)
     cop = min(cop, target_cop)
