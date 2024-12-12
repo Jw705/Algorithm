@@ -1,4 +1,5 @@
 def solution(temperature, t1, t2, a, b, onboard):
+    answer = 0
     n = len(onboard)
     
     temperature += 10
@@ -6,34 +7,42 @@ def solution(temperature, t1, t2, a, b, onboard):
     t2 += 10
     
     # DP[i][j] : i분에 j + 10 온도를 만들 수 있는 가장 적은 전력
-    MAX = float('inf')
-    dp = [[MAX for _ in range(51)] for _ in range(n)]
+    dp = [[int(1e9) for _ in range(51)] for _ in range(1001)]
     dp[0][temperature] = 0
-    
-    def is_valid(temp, onboard_state):
-        # 온도가 유효한 범위인지 확인
-        return onboard_state == 0 or (t1 <= temp <= t2)
     
     for i in range(n - 1):
         for j in range(51):
-            if dp[i][j] == MAX:
-                continue
-            
-            # 에어컨 ON 케이스
-            if j < 50 and is_valid(j + 1, onboard[i + 1]):
-                dp[i + 1][j + 1] = min(dp[i + 1][j + 1], dp[i][j] + a)
-            if j > 0 and is_valid(j - 1, onboard[i + 1]):
-                dp[i + 1][j - 1] = min(dp[i + 1][j - 1], dp[i][j] + a)
-            if is_valid(j, onboard[i + 1]):
-                dp[i + 1][j] = min(dp[i + 1][j], dp[i][j] + b)
-            
-            # 에어컨 OFF 케이스
-            if j < temperature and is_valid(j + 1, onboard[i + 1]):
-                dp[i + 1][j + 1] = min(dp[i + 1][j + 1], dp[i][j])
-            if j == temperature and is_valid(j, onboard[i + 1]):
-                dp[i + 1][j] = min(dp[i + 1][j], dp[i][j])
-            if j > temperature and is_valid(j - 1, onboard[i + 1]):
-                dp[i + 1][j - 1] = min(dp[i + 1][j - 1], dp[i][j])
+            if dp[i][j] != int(1e9):                  
+                
+                # 에어컨 on                
+                # 희망 온도보다 낮다 -> 온도 1 상승, 전력 a 소비
+                if j < 50:
+                    if onboard[i + 1] == 0 or (onboard[i + 1] == 1 and t1 <= j + 1 <= t2):
+                        dp[i + 1][j + 1] = min(dp[i][j] + a, dp[i + 1][j + 1])
+                # 희망 온도보다 높다 -> 온도 1 하강, 전력 a 소비
+                if j > 0:
+                    if onboard[i + 1] == 0 or (onboard[i + 1] == 1 and t1 <= j - 1 <= t2):
+                        dp[i + 1][j - 1] = min(dp[i][j] + a, dp[i + 1][j - 1]) 
+                # 희망 온도 내에 있다 -> 온도 유지, 전력 b 소비
+                if t1 <= j <= t2:
+                    if onboard[i + 1] == 0 or (onboard[i + 1] == 1 and t1 <= j <= t2):
+                        dp[i + 1][j] = min(dp[i][j] + b, dp[i + 1][j])
+                    
+                
+                # 에어컨 off (전력 소비 X)
+                # 실외 온도보다 낮다 -> 온도 1 상승
+                if j < temperature:
+                    if onboard[i + 1] == 0 or (onboard[i + 1] == 1 and t1 <= j + 1 <= t2):
+                        dp[i + 1][j + 1] = min(dp[i][j], dp[i + 1][j + 1])
+                # 실외 온도와 같다 -> 유지
+                elif j == temperature:
+                    if onboard[i + 1] == 0 or (onboard[i + 1] == 1 and t1 <= j <= t2):
+                        dp[i + 1][j] = min(dp[i][j], dp[i + 1][j])
+                # 실외 온도보다 높다 -> 온도 1 하강
+                elif j > temperature:
+                    if onboard[i + 1] == 0 or (onboard[i + 1] == 1 and t1 <= j - 1 <= t2):
+                        dp[i + 1][j - 1] = min(dp[i][j], dp[i + 1][j - 1])
+                        
+    answer = min(dp[n - 1])
     
-    # 마지막 상태에서 최소 전력값 탐색
-    return min(dp[n - 1])
+    return answer
