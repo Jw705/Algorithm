@@ -1,5 +1,6 @@
 from collections import deque
 
+
 def solution(rc, operations):
     n = len(rc)
     m = len(rc[0])
