@@ -1,22 +1,26 @@
+# 24.12.30 38m
+
 def solution(scores):
     rank_sum = []
     원호_a = scores[0][0]
     원호_b = scores[0][1]
-    
-    min_score = [-1 for _ in range(100002)]
-    
+                     
+    # max_b[a] : 근무 태도 점수가 a 점수 이상인 인사고과 중, 가장 높은 동료 평가 점수
+    max_b = [-1 for _ in range(100002)]    
     for a, b in scores:
-        min_score[a] = max(min_score[a], b)
+        max_b[a] = max(max_b[a], b)
     
     cur_max_b = -1
     for i in range(100001, -1, -1):
-        min_score[i] = max(cur_max_b, min_score[i])
-        cur_max_b = max(cur_max_b, min_score[i])
+        max_b[i] = max(cur_max_b, max_b[i])
+        cur_max_b = max(cur_max_b, max_b[i])
     
-    if min_score[원호_a + 1] > 원호_b:
+    if max_b[원호_a + 1] > 원호_b:
         return -1 
     for a, b in scores:
-        if min_score[a + 1] <= b:
+        # max_b[a + 1] > -1 : a 보다 높은 근무 태도 점수 존재
+        # max_b[a + 1] > b  : a 보다 근무 태도 점수 높고, 동료 평가 점수도 높은 사람 존재
+        if max_b[a + 1] <= b:
             rank_sum.append(a + b)
     
     answer = 0
