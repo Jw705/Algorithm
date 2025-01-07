@@ -1,3 +1,5 @@
+// 25.01.06 31m
+
 function solution(sequence) {
     let answer = 0;
     
