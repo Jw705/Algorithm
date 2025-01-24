@@ -10,7 +10,7 @@ def solution(k, ranges):
     
     integral = []
     for i in range(len(ubak)-1):
-        area = min(ubak[i],ubak[i + 1]) + ((abs(ubak[i]-ubak[i+1]) / 2.0))
+        area = min(ubak[i], ubak[i + 1]) + abs(ubak[i]-ubak[i+1]) / 2.0
         integral.append(area)
     
     answer = []
